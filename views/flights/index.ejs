@@ -1,0 +1,20 @@
+<%- include('../partials/header') %>
+<table id="list">
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% flights.forEach(function(f) { %>
+      <tr>
+        <td><%= f.title %></td>
+        <td><%= f.releaseYear %></td>
+        <td><a href="/flights/<%= f._id %>">DETAILS</a></td>
+      </tr>
+      <% }); %>
+    </tbody>
+  </table>
+  
+<%- include('../partials/footers') %>

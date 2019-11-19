@@ -1,0 +1,17 @@
+<%- include('../partials/header') %>
+
+<form id="new-form" action="/flights" method="POST">
+  <label>Airline:</label>
+  <select name="airline">
+      <option value="American">American</option>
+      <option value="Southwest">Southwest</option>
+      <option value="United">United</option>
+  </select>
+  <label>Flight Number:</label>
+  <input type="text" name="flightNumber">
+  <label>Date</label>
+  <input class="localTime" type="datetime-local" name="departs">
+  <input id="submit" type="submit" value="Add Flight">
+</form>
+
+<%- include('../partials/footers') %>
