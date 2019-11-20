@@ -14,9 +14,11 @@ function index(req, res) {
 }
 
 function show(req, res) {
-    Flight.findById(req.params.id), function(err, flight) {
+    console.log('party at line 17 in show')
+    Flight.findById(req.params.id, function(err, flight) {
+        if (err) res.send(err) // dont do this in production but its great for development
     res.render('flights/show', {title: 'Flight Details', flight} );
-}
+})
 }
 
 function newFlight(req, res) {
