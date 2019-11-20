@@ -1,6 +1,14 @@
 <%- include('../partials/header') %>
 
 <form id="new-form" action="/flights" method="POST">
+  
+  <label>Airport:</label>
+  <select name="airport">
+      <option value="AUS">Austin</option>
+      <option value="DAL">Dallas</option>
+      <option value="LAX">Los Angeles</option>
+      <option value="SEA">Seattle</option>
+  </select>
   <label>Airline:</label>
   <select name="airline">
       <option value="American">American</option>
@@ -12,6 +20,7 @@
   <label>Date</label>
   <input class="localTime" type="datetime-local" name="departs">
   <input id="submit" type="submit" value="Add Flight">
+
 </form>
 
 <%- include('../partials/footers') %>
