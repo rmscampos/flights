@@ -1,3 +1,7 @@
+html {
+  background-color: rgb(236, 202, 236)
+}
+
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
@@ -5,7 +9,7 @@ body {
 
 body > nav {
   grid-area: nav;
-  background-color: #B8C0C2;
+  background-color: rgb(15, 82, 82);
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -45,7 +49,7 @@ body > main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #E8ECEB;
+  background-color: rgb(157, 207, 195);
   padding: 20px;
   overflow-y: scroll;
 }
