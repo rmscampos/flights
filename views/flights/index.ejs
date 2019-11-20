@@ -2,19 +2,21 @@
 <table id="list">
   <thead>
     <tr>
-      <th>Title</th>
-      <th></th>
+      <th>Airline</th>
+      <th>Flight Number</th>
+      <th>Departs</th>
     </tr>
   </thead>
   <tbody>
     <% flights.forEach(function(f) { %>
       <tr>
-        <td><%= f.title %></td>
-        <td><%= f.releaseYear %></td>
-        <td><a href="/flights/<%= f._id %>">DETAILS</a></td>
+        <td><%= f.airline %></td>
+        <td><%= f.flightNumber %></td>
+        <td><%= f.departs %></td>
       </tr>
       <% }); %>
     </tbody>
+    
   </table>
   
 <%- include('../partials/footers') %>

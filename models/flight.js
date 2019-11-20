@@ -11,7 +11,7 @@ const flightSchema = new Schema({
         type: String,
         enum: ['American', 'Southwest', 'United']
     },
-    flightNo: {
+    flightNumber: {
         type: Number,
         min: 10, max: 9999
     },
