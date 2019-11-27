@@ -11,7 +11,7 @@ module.exports = {
 function index(req, res) {
     Flight.find({}, function(err, flights) {
         res.render('flights/index', { title: 'All Flights', flights});
-    });
+    }).sort('departs');
 }
 
 function show(req, res) {
